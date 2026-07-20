@@ -1,29 +1,23 @@
 # BioLume Sentinel
 
-BioLume Sentinel is a conceptual plant-synthetic-biology proposal for a contained reporter plant that helps identify where confirmatory soil testing should happen.
+could a plant glow when its roots encounter contaminated soil, so we know where to run proper tests?
 
-**Live proposal:** [pinterittejeden-gif.github.io/Project-BioLume-Sentinel](https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/)
+that's the question behind BioLume Sentinel. my idea is a contained, non-food reporter plant that works as a warning layer—not a replacement for analytical chemistry.
 
-## Research question
+**read the full thing:** [pinterittejeden-gif.github.io/Project-BioLume-Sentinel](https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/)
 
-Can one pre-selected soil contaminant produce a repeatable, specific optical signal in a contained non-food plant chassis under realistic soil conditions?
+## where the idea stands
 
-## Evidence status
+- **what I found:** plant reporters, autoluminescent plants, phytosensors, and optical readouts already exist in published work.
+- **my leap:** connect a contaminant-responsive element, a tissue-aware signal gate, and standardized imaging in one removable module.
+- **the annoying problem:** normal plant stress and messy soil chemistry could easily imitate or hide the signal.
+- **what I'm not claiming:** I haven't built or validated this, and it would not detect every pollutant or replace lab testing.
 
-- **Established:** plant reporters, autoluminescent plants, phytosensors, and optical readout systems exist in published research.
-- **Proposed:** combining a contaminant-responsive element, tissue-aware signal gate, and standardized imaging into a removable field-screening module.
-- **Unknown:** specificity in mixed soil, reporter stability, trait durability, and whether the signal improves sampling decisions.
-- **Not claimed:** experimental validation, universal pollutant detection, remediation, or replacement of analytical chemistry.
+## what's in here
 
-## Repository contents
+- `index.html` has the full idea, failure conditions, test thresholds, roadmap, and papers.
+- every visual is drawn in HTML/CSS, so the page does not depend on external images.
 
-- `index.html` — complete proposal, evidence boundaries, design gates, controls, roadmap, and references.
-- Code-native visuals — original HTML/CSS diagrams; no third-party raster images are required.
+if you spot a broken assumption or a paper I missed, open an issue. that's genuinely useful.
 
-## Feedback and citation
-
-Constructive criticism is welcome through repository issues. Suggested citation: **Pinteritte. “BioLume Sentinel: Living Plant Biosensors for Soil Contamination.” BIOFOLIO concept proposal, version 1.1, 2026.**
-
-## License
-
-Website code is MIT-licensed. Original writing and code-native diagrams are CC BY 4.0. See [LICENSE.md](LICENSE.md).
+the code is MIT licensed; my writing and diagrams are CC BY 4.0. details are in [LICENSE.md](LICENSE.md).
