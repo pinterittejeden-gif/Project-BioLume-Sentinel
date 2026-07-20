@@ -1,0 +1,401 @@
+```html id="biolume-sentinel-index"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project BioLume Sentinel: Living Plant Biosensors for Soil Contamination</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #24292f;
+            --text-muted: #57606a;
+            --accent-blue: #0969da;
+            --border-color: #d0d7de;
+            --panel-bg: #f6f8fa;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+        }
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 22px;
+            padding: 8px 13px;
+            border: 1px solid var(--border-color);
+            border-radius: 999px;
+            background-color: var(--panel-bg);
+            color: var(--text-color);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .back-home:hover {
+            background-color: #eef2f6;
+            border-color: #afb8c1;
+            text-decoration: none;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--text-color);
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+
+        .meta-data {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .hook {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-color);
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-blue);
+            border-radius: 6px;
+            padding: 16px 18px;
+            margin-bottom: 30px;
+        }
+
+        .abstract, .disclaimer, .tldr {
+            background-color: var(--panel-bg);
+            border-left: 4px solid var(--accent-blue);
+            padding: 20px;
+            margin-bottom: 35px;
+            font-size: 1rem;
+        }
+
+        .abstract h2, .disclaimer h2, .tldr h2 {
+            margin-top: 0;
+            font-size: 1.15rem;
+            color: var(--text-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .flow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .flow-step {
+            border: 1px solid var(--border-color);
+            background: #ffffff;
+            border-radius: 999px;
+            padding: 6px 10px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .flow-arrow {
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+
+        h2.section-title {
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            overflow: hidden;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .img-wrapper {
+            background: #fafafa;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: #ffffff;
+        }
+
+        .figure-caption {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+            text-align: left;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: var(--accent-blue);
+        }
+
+        .card-content p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .list-panel {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+        .list-panel ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .list-panel li {
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            color: var(--text-color);
+        }
+
+        .references {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .references li {
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a class="back-home" href="https://pinterittejeden-gif.github.io/pinterittejeden-gif/">
+        ← Back to main page
+    </a>
+
+    <header>
+        <h1>Project BioLume Sentinel: Living Plant Biosensors for Soil Contamination</h1>
+        <div class="meta-data">Conceptual Research Proposal & Environmental Phytosensor Overview // System Model: <em>Arabidopsis</em> / <em>Nicotiana</em> reporter plants</div>
+    </header>
+
+    <div class="hook">
+        Soil contamination is usually invisible until someone tests it. BioLume Sentinel is built around a simple idea: make a plant show stress signals before the damage reaches crops, water, or people.
+    </div>
+
+    <div class="disclaimer">
+        <h2>Project Status</h2>
+        <p>This is a hypothetical plant synthetic biology and environmental monitoring project for portfolio and educational use. BioLume Sentinel has not been built, tested, or validated by me. The figures are reference visuals or concept placeholders. The numbered citations connect the text and captions to supporting literature, but the images are not experimental data from this project.</p>
+    </div>
+
+    <div class="tldr">
+        <h2>Mechanism Summary</h2>
+        <p>BioLume Sentinel is a plant-based contamination warning system: roots encounter a pollutant, stress-responsive sensing circuits activate, the signal is routed into a visible or camera-readable reporter, and the plant becomes a living map of where soil chemistry may be unsafe [1,2,3,4].</p>
+        <div class="flow">
+            <span class="flow-step">Contaminated soil</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Root uptake / exposure</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Stress promoter activation</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Light reporter output</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Mapped warning zone</span>
+        </div>
+    </div>
+
+    <div class="abstract">
+        <h2>Abstract</h2>
+        <p>Heavy metals, industrial chemicals, and agricultural residues can stay hidden in soil long after the original pollution source is gone. Standard chemical testing is accurate, but it is usually expensive, spot-based, and delayed. Plants already respond to soil chemistry through root uptake, stress signaling, hormone changes, oxidative stress pathways, and gene expression shifts. BioLume Sentinel turns that natural sensitivity into a visible reporting concept.</p>
+
+        <p>The project imagines a non-food model plant, such as <em>Arabidopsis thaliana</em> or <em>Nicotiana benthamiana</em>, engineered with pollutant-responsive promoter systems connected to a fluorescent or bioluminescent reporter. Plant-based biosensors and phytosensors have already been explored for environmental monitoring, while engineered bioluminescent plants show that visible plant light output is technically possible [1,2,3]. BioLume Sentinel does not claim to replace laboratory soil analysis. It works more like a biological first-pass warning layer: flag suspicious zones, guide sampling, and show whether a plant is experiencing biologically available contamination rather than only measuring total chemical concentration. The hard parts are specificity, false positives, weak light output, containment, and making sure the plant reports contamination without becoming part of the contamination problem.</p>
+    </div>
+
+    <h2 class="section-title">Methodological Specifications</h2>
+    <div class="grid">
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="1.png" alt="Bioluminescent plant used as a reporter-output reference">
+                <div class="figure-caption">Figure 1. Glowing plant reference used to show the kind of visible reporter output BioLume Sentinel would try to use, not a finished contamination sensor [2,3].</div>
+            </div>
+            <div class="card-content">
+                <h3>1. Reporter Output Layer</h3>
+                <p>The visible part of BioLume Sentinel is the reporter. A contamination signal would not be shown as vague plant sickness; it would be routed into a measurable output such as luciferase-based bioluminescence, fluorescent protein expression, or a pigment reporter. Fungal bioluminescence systems are useful as a reference because they can use plant metabolites such as caffeic acid to support self-sustained glow in engineered plants [2,3]. For field use, though, the output would need to be calibrated against background light, plant age, tissue thickness, camera sensitivity, and normal stress responses.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="2.png" alt="Plant optical sensing and readout setup">
+                <div class="figure-caption">Figure 2. Plant optical sensing setup used as a reference for camera-readable signal collection and environmental monitoring [4].</div>
+            </div>
+            <div class="card-content">
+                <h3>2. Root-Zone Sensing Circuit</h3>
+                <p>The sensing layer starts near the roots, where the plant is exposed to dissolved metals, salts, nitrates, or organic pollutants. Instead of claiming one plant can detect everything, BioLume Sentinel would use separate promoter-reporter modules for specific contaminant classes. Heavy-metal-responsive circuits, transcription-factor biosensors, and phytosensor systems show the logic: a chemical stress activates a regulatory element, and that activation drives a visible reporter [1,5,6]. The design avoids using edible crop plants so the sensor does not enter the food chain.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="3.png" alt="Fluorescent plant biosensor response image">
+                <div class="figure-caption">Figure 3. Fluorescent plant biosensor response used as a reference for mapping internal plant signals after environmental or chemical stimulation [7].</div>
+            </div>
+            <div class="card-content">
+                <h3>3. Signal Gating & False-Positive Control</h3>
+                <p>Plants react to many stresses at once, so a simple “stress equals glow” system would be useless. Drought, heat, salt, nutrient deficiency, pathogens, and mechanical damage could all create misleading signals. BioLume Sentinel handles this by requiring signal gating: a reporter activates only when a pollutant-responsive promoter overlaps with a second stress marker or root-zone exposure pattern. Multiple reporter colors or timing windows could separate heavy-metal exposure from general plant stress. If the signal does not match the expected tissue location, timing, and dose response, it gets treated as a false positive rather than proof of contamination.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="4.png" alt="Leaf reporter expression validation image">
+                <div class="figure-caption">Figure 4. Reporter-expression validation in plant tissue used as a reference for testing whether a genetic output circuit is visible and measurable before any field trial [8].</div>
+            </div>
+            <div class="card-content">
+                <h3>4. Calibration & Field Readout</h3>
+                <p>The plant would only be useful if the signal can be read consistently. Before field testing, reporter output would be calibrated in growth chambers using known contaminant concentrations, clean controls, mixed-stress controls, and soil chemistry measurements. The goal is not a pretty glowing plant; the goal is a map. Camera imaging, time-lapse photography, or low-cost optical readers would convert reporter brightness into relative warning zones. Any positive field signal would still require chemical soil testing before cleanup decisions are made.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Lifecycle & Risk Controls</h2>
+    <div class="list-panel">
+        <p><strong>Practical controls that keep the sensor from becoming the problem:</strong></p>
+        <ul>
+            <li><strong>Non-Food Chassis:</strong> BioLume Sentinel should use contained model plants or ornamental chassis, not crops. That keeps the reporter organism out of the food chain and makes accidental harvesting less likely. Field use would require sterile lines, physical containment, or removable planter modules instead of direct release into open farmland.</li>
+
+            <li><strong>Specificity Before Brightness:</strong> A brighter glow is not automatically a better biosensor. If the plant lights up for drought, heat, or normal nutrient stress, it becomes misleading. The circuit should be tuned around specificity first, using clean soil, contaminated soil, mixed contaminant exposure, drought controls, salt controls, and pathogen controls before any public-facing claim is made.</li>
+
+            <li><strong>Biological Availability, Not Total Pollution:</strong> The plant reports what it experiences, not the full chemical history of the soil. That is useful because bioavailable contamination is what living systems actually interact with, but it also means the plant cannot replace laboratory analysis [4,5]. BioLume Sentinel would flag where to sample next, not decide whether a site is safe by itself.</li>
+
+            <li><strong>Containment and Trait Drift:</strong> Engineered plants can lose reporter strength, silence transgenes, or vary between generations. The sensor line would need stable insertion screening, repeated growth-cycle testing, and a kill-or-remove protocol after deployment. Seeds, pollen, and plant waste would be collected instead of left on site.</li>
+
+            <li><strong>Camera and Light Standardization:</strong> Reporter brightness depends on camera settings, night conditions, leaf angle, plant age, and tissue health. Field readout would need a calibration card, fixed exposure settings, clean-control plants, and repeated imaging times. Without that, the same plant could look “positive” or “negative” just because the photo was taken differently.</li>
+
+            <li><strong>Cleanup Boundary:</strong> BioLume Sentinel is a detection concept, not a remediation organism. It does not remove enough contamination to clean a site by itself. If the plant reports a signal, the next step is targeted sampling, chemical confirmation, and then actual remediation or containment work.</li>
+        </ul>
+    </div>
+
+    <h2 class="section-title">Proposed Phased Testing</h2>
+    <div class="list-panel">
+        <p><strong>Development pathway for validating the concept before any environmental deployment:</strong></p>
+        <ul>
+            <li><strong>Phase 1 — Promoter and Reporter Selection:</strong> Choose pollutant-responsive promoters and pair them with luciferase, fluorescent, or pigment reporters. Early tests would compare brightness, background expression, tissue location, and response timing.</li>
+
+            <li><strong>Phase 2 — Growth-Chamber Calibration:</strong> Grow sensor plants in clean soil and controlled contaminant gradients. Measure reporter output against known concentrations, soil pH, moisture, plant age, and exposure duration.</li>
+
+            <li><strong>Phase 3 — False-Positive Challenge:</strong> Expose plants to drought, heat, salinity, nutrient deficiency, pathogen pressure, and mechanical damage. Any circuit that lights up too broadly gets redesigned before field testing.</li>
+
+            <li><strong>Phase 4 — Mixed-Soil Trials:</strong> Test the system in realistic soil mixtures with organic matter, clay content, changing pH, and multiple pollutants. This phase checks whether the plant responds to bioavailable contamination instead of only clean laboratory solutions.</li>
+
+            <li><strong>Phase 5 — Optical Readout Validation:</strong> Compare phone cameras, low-cost night cameras, fluorescence readers, and fixed imaging boxes. The result should be a repeatable signal map, not just a visually interesting glow.</li>
+
+            <li><strong>Phase 6 — Contained Pilot Deployment:</strong> Place removable sensor modules at a controlled test site. Signals would guide sampling locations, but chemical analysis would still decide whether contamination is actually present.</li>
+        </ul>
+    </div>
+
+    <h2 class="section-title">References</h2>
+    <div class="list-panel references">
+        <ol>
+            <li>Kovalchuk, I. et al. “Transgenic Plants as Sensors of Environmental Pollution Genotoxicity.” <em>Sensors</em>, 2008. <a href="https://www.mdpi.com/1424-8220/8/3/1539/html" target="_blank">https://www.mdpi.com/1424-8220/8/3/1539/html</a></li>
+
+            <li>Mitiouchkina, T. et al. “Plants with Genetically Encoded Autoluminescence.” <em>Nature Biotechnology</em>, 2020. <a href="https://doi.org/10.1038/s41587-020-0500-9" target="_blank">https://doi.org/10.1038/s41587-020-0500-9</a></li>
+
+            <li>Khakhar, A. et al. “Building Customizable Auto-Luminescent Luciferase-Based Reporters in Plants.” <em>eLife</em>, 2020. <a href="https://doi.org/10.7554/eLife.52786" target="_blank">https://doi.org/10.7554/eLife.52786</a></li>
+
+            <li>Wong, M. H. et al. “Nitroaromatic Detection and Infrared Communication from Wild-Type Plants Using Plant Nanobionics.” <em>Nature Materials</em>, 2016. <a href="https://doi.org/10.1038/nmat4771" target="_blank">https://doi.org/10.1038/nmat4771</a></li>
+
+            <li>Hernández-Allica, J. et al. “Heavy Metal Whole-Cell Biosensors Using Eukaryotic Microorganisms: An Updated Critical Review.” <em>Frontiers in Microbiology</em>, 2015. <a href="https://doi.org/10.3389/fmicb.2015.00048" target="_blank">https://doi.org/10.3389/fmicb.2015.00048</a></li>
+
+            <li>Chen, Y. et al. “Biological and Molecular Components for Genetically Engineering Biosensors in Plants.” <em>Frontiers in Plant Science</em>, 2021. <a href="https://www.frontiersin.org/articles/10.3389/fpls.2021.687244/full" target="_blank">https://www.frontiersin.org/articles/10.3389/fpls.2021.687244/full</a></li>
+
+            <li>Toyota, M. et al. “Glutamate Triggers Long-Distance, Calcium-Based Plant Defense Signaling.” <em>Science</em>, 2018. <a href="https://doi.org/10.1126/science.aat7744" target="_blank">https://doi.org/10.1126/science.aat7744</a></li>
+
+            <li>Leuzinger, K. et al. “Efficient Agroinfiltration of Plants for High-Level Transient Expression of Recombinant Proteins.” <em>Journal of Visualized Experiments</em>, 2013. <a href="https://doi.org/10.3791/50521" target="_blank">https://doi.org/10.3791/50521</a></li>
+        </ol>
+    </div>
+
+    <footer>
+        another trophy to my portfolio ig <br>
+        <span style="font-size: 0.75rem; color: #afb5bb;">Pinteritte - conceptual research proposal, writing, and website by me.</span>
+    </footer>
+</div>
+
+</body>
+</html>
+```
