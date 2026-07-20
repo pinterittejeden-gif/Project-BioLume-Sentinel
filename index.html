@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BioLume Sentinel - Living plant biosensors for soil contamination</title>
+  <meta name="description" content="My idea for a contained plant reporter that could point out where proper soil testing should happen next.">
+  <meta name="theme-color" content="#f3edda">
+  <link rel="canonical" href="https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/">
+  <meta property="og:title" content="BioLume Sentinel">
+  <meta property="og:description" content="A contained plant reporter concept for directing confirmatory soil testing.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/">
+  <link rel="stylesheet" href="../pinterittejeden-gif/research.css?v=1.5">
+</head>
+<body class="theme-biolume">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="proposal-shell">
+    <nav class="proposal-nav" aria-label="Proposal navigation">
+      <a href="https://pinterittejeden-gif.github.io/pinterittejeden-gif/">← back to my biology stuff</a>
+      <span class="status-pill">idea only · not tested</span>
+    </nav>
+
+    <main id="main">
+      <header class="proposal-hero">
+        <div>
+          <p class="eyebrow">idea 01 · glowing plants</p>
+          <h1>BioLume Sentinel</h1>
+          <p class="proposal-dek">Could a contained plant reporter provide an inexpensive screening layer that identifies where confirmatory soil sampling should happen next?</p>
+          <div class="proposal-meta" role="group" aria-label="Project characteristics">
+            <span class="tag">Plant synthetic biology</span>
+            <span class="tag">Optical readout</span>
+            <span class="tag">Contained deployment</span>
+          </div>
+        </div>
+
+        <div class="system-diagram" role="img" aria-label="Concept flow from root-zone exposure through a gated reporter circuit to standardized optical readout and laboratory confirmation">
+          <div class="diagram-core">screening signal</div>
+          <span class="diagram-node node-top">root-zone exposure</span>
+          <span class="diagram-node node-right">gated reporter circuit</span>
+          <span class="diagram-node node-bottom">camera-readable output</span>
+          <span class="diagram-node node-left">chemical confirmation</span>
+          <span class="diagram-caption">my mechanism sketch · definitely not experimental data</span>
+        </div>
+      </header>
+
+      <aside class="disclosure" aria-labelledby="disclosure-title">
+        <strong id="disclosure-title">what i'm claiming (and what i'm not)</strong>
+        <p>I haven't engineered, grown, field-tested, or validated BioLume Sentinel. The papers support individual reporter and sensing mechanisms; they do not prove that my combined system would be specific, stable, or safe to deploy.</p>
+      </aside>
+
+      <section class="visual-notes" aria-labelledby="visual-notes-title">
+        <div class="visual-notes-heading">
+          <div>
+            <p class="section-kicker">real reference images</p>
+            <h2 id="visual-notes-title">the actual plant, up close</h2>
+          </div>
+          <p>Before my circuit sketch, these are the two real scales the idea has to connect: a whole Arabidopsis plant and the root surface where soil exposure would be sensed.</p>
+        </div>
+
+        <div class="photo-notes">
+          <figure class="photo-note">
+            <img src="assets/arabidopsis-root-hairs.jpg" width="1280" height="1027" loading="lazy" decoding="async" alt="Blue confocal fluorescence image of an Arabidopsis root and its fine root hairs against a black background">
+            <figcaption>
+              <strong>where the signal would begin</strong>
+              <span>A confocal fluorescence view of Arabidopsis root hairs. This is a biological reference image, not BioLume output or experimental data.</span>
+              <small class="photo-credit">G Lens Microscopist and Megan Gerber · <a href="https://commons.wikimedia.org/wiki/File:Arabidopsis_root_hairs.jpg" target="_blank" rel="noopener noreferrer">source</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></small>
+            </figcaption>
+          </figure>
+
+          <figure class="photo-note photo-note--portrait">
+            <img src="assets/arabidopsis-plant.jpg" width="1280" height="1707" loading="lazy" decoding="async" alt="A flowering Arabidopsis plant growing in a small pot against a black background">
+            <figcaption>
+              <strong>the kind of chassis I mean</strong>
+              <span>A flowering Arabidopsis plant, included as a model-organism reference rather than a picture of the proposed system.</span>
+              <small class="photo-credit">Frost Museum · <a href="https://commons.wikimedia.org/wiki/File:Arabidopsis_plant.jpg" target="_blank" rel="noopener noreferrer">source</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a></small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="proposal-section" aria-labelledby="boundary-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">where the idea stands</p>
+            <h2 id="boundary-title">what I know, where I'm guessing, and what could break</h2>
+          </div>
+          <p>The useful question is not whether plants can report signals - they can. The proof problem is whether one selected contaminant can generate a repeatable, specific output in realistic soil without confusing ordinary plant stress for pollution.</p>
+        </div>
+
+        <div class="boundary-grid">
+          <article class="boundary-card">
+            <span>what I found</span>
+            <h3>Plants can carry measurable reporter systems</h3>
+            <p>Transgenic phytosensors, fluorescent reporters, autoluminescent plants, and plant nanobionic sensors demonstrate several ways to turn exposure or signaling into an optical output [1–4,6].</p>
+          </article>
+          <article class="boundary-card">
+            <span>my leap</span>
+            <h3>Route one root-zone signal into a field-readable warning</h3>
+            <p>The proposal combines a contaminant-responsive regulatory element, a tissue-aware gate, and standardized imaging in a removable non-food plant module.</p>
+          </article>
+          <article class="boundary-card">
+            <span>what could kill it</span>
+            <h3>Specificity, bioavailability, and signal stability</h3>
+            <p>Soil pH, moisture, organic matter, plant age, other stresses, transgene silencing, and mixed pollutants could all weaken or imitate the intended signal.</p>
+          </article>
+          <article class="boundary-card">
+            <span>what I'd test first</span>
+            <h3>A blinded dose-response study with stress controls</h3>
+            <p>One analyte and one chassis must outperform clean, drought, salt, nutrient, heat, pathogen, and mixed-soil controls before any contained field pilot is justified.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="proposal-section" aria-labelledby="architecture-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">how I imagine it working</p>
+            <h2 id="architecture-title">a useful warning light, not just a glowing plant</h2>
+          </div>
+          <p>The first version deliberately narrows the problem: one pre-selected analyte class, one non-food model plant, and one calibrated output channel.</p>
+        </div>
+
+        <div class="mechanism-grid">
+          <article class="mechanism-card">
+            <span>01 · Target definition</span>
+            <h3>Select one analyte before selecting a reporter</h3>
+            <p>The proposal should begin with a contaminant that has a plausible responsive promoter or transcription-factor pathway. “General pollution” is not a valid target because general stress would produce unusable ambiguity [1,5,6].</p>
+          </article>
+          <article class="mechanism-card">
+            <span>02 · Reporter layer</span>
+            <h3>Choose output for measurement quality</h3>
+            <p>Luciferase, fluorescence, pigment, or autoluminescence should be compared for background expression, response time, tissue penetration, energy burden, and compatibility with inexpensive imaging [2,3].</p>
+          </article>
+          <article class="mechanism-card">
+            <span>03 · Signal gating</span>
+            <h3>Require location, timing, and exposure agreement</h3>
+            <p>A useful circuit should reject signals that appear in the wrong tissue, without the expected timing, or under non-target stress. A second marker or logical gate is proposed to reduce false positives.</p>
+          </article>
+          <article class="mechanism-card">
+            <span>04 · Readout and confirmation</span>
+            <h3>Standardize the camera, then verify chemically</h3>
+            <p>Fixed exposure, calibration references, matched control plants, and repeated imaging would convert brightness into a relative warning map. A positive plant signal would direct laboratory sampling - not declare a site safe or unsafe.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="proposal-section" aria-labelledby="metrics-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">numbers before excitement</p>
+            <h2 id="metrics-title">decide what counts before looking at results</h2>
+          </div>
+          <p>These are proposed go/no-go thresholds for an early controlled study, not measured results. They should be revised with a domain expert before experimental use.</p>
+        </div>
+
+        <div class="metrics-wrap">
+          <table class="metrics">
+            <thead>
+              <tr><th>Measure</th><th>Minimum signal for continued development</th><th>Stop or redesign condition</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Target response</td><td>At least a threefold median reporter increase over matched clean-soil controls after normalization for plant size.</td><td>Target exposure cannot be distinguished from controls across repeated batches.</td></tr>
+              <tr><td>Dose ordering</td><td>Monotonic response across at least five pre-registered bioavailable concentrations.</td><td>Signal direction changes unpredictably or saturates below the useful range.</td></tr>
+              <tr><td>Specificity</td><td>No more than 10% positive classifications across the combined non-target stress panel.</td><td>Drought, salinity, heat, nutrient stress, or pathogens regularly reproduce the target signal.</td></tr>
+              <tr><td>Repeatability</td><td>Within-condition coefficient of variation at or below 25% across independent growth batches.</td><td>Plant-to-plant variation overwhelms the exposure effect.</td></tr>
+              <tr><td>Confirmation</td><td>Blinded reporter classification agrees with an independent chemical assay in at least 90% of test samples.</td><td>The plant map does not improve sampling decisions above a pre-registered baseline.</td></tr>
+              <tr><td>Containment</td><td>No viable seed, pollen, or plant material detected outside the removable test module.</td><td>Containment cannot be demonstrated under the intended handling conditions.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="proposal-section" aria-labelledby="controls-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">ways this could go badly</p>
+            <h2 id="controls-title">don't let the sensor become the problem</h2>
+          </div>
+          <p>Containment, false-positive control, and independent confirmation are system requirements rather than optional later additions.</p>
+        </div>
+
+        <div class="control-grid">
+          <article class="control-card"><span>Chassis</span><h3>Non-food and removable</h3><p>Use contained model or ornamental plants, sterile lines where possible, and removable modules rather than direct release into farmland.</p></article>
+          <article class="control-card"><span>Interpretation</span><h3>Bioavailability only</h3><p>The plant reports what it experiences. It cannot reconstruct total contamination or replace analytical chemistry [4,5].</p></article>
+          <article class="control-card"><span>Imaging</span><h3>Fixed acquisition protocol</h3><p>Lock exposure settings, time of day, geometry, reference targets, plant age, and control placement before comparing brightness.</p></article>
+          <article class="control-card"><span>Lifecycle</span><h3>Recover every organism</h3><p>Collect seeds, pollen, plant waste, and growth medium; monitor trait stability and define a kill-or-remove process before deployment.</p></article>
+        </div>
+      </section>
+
+      <section class="proposal-section" aria-labelledby="roadmap-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">how I'd test it</p>
+            <h2 id="roadmap-title">six small steps before anything serious</h2>
+          </div>
+          <p>Progression stops whenever a specificity, stability, containment, or confirmation gate fails.</p>
+        </div>
+
+        <ol class="roadmap">
+          <li><h3>Target and promoter selection</h3><p>Choose one analyte, one chassis, and candidate regulatory elements. Define clean and non-target controls before construction.</p></li>
+          <li><h3>Reporter comparison</h3><p>Compare brightness, background, timing, metabolic burden, and tissue localization under controlled expression.</p></li>
+          <li><h3>Growth-chamber calibration</h3><p>Measure blinded dose-response curves across known concentrations and independent biological replicates.</p></li>
+          <li><h3>False-positive challenge</h3><p>Apply drought, salt, heat, nutrient, pathogen, mechanical, and mixed-stress controls.</p></li>
+          <li><h3>Realistic soil matrix</h3><p>Vary pH, moisture, organic matter, clay content, and contaminant mixtures while comparing chemical bioavailability.</p></li>
+          <li><h3>Contained pilot</h3><p>Only after earlier gates pass, test removable modules with standardized imaging and confirm every classification chemically.</p></li>
+        </ol>
+      </section>
+
+      <section class="proposal-section" aria-labelledby="references-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">stuff I read</p>
+            <h2 id="references-title">papers behind the idea</h2>
+          </div>
+          <p>These papers support separate mechanisms and measurement approaches. None of them proves that my full BioLume Sentinel idea works.</p>
+        </div>
+
+        <ol class="references">
+          <li>Kovalchuk, I. et al. “Transgenic Plants as Sensors of Environmental Pollution Genotoxicity.” <em>Sensors</em>, 2008. <a href="https://www.mdpi.com/1424-8220/8/3/1539/html" target="_blank" rel="noopener noreferrer">Source</a></li>
+          <li>Mitiouchkina, T. et al. “Plants with Genetically Encoded Autoluminescence.” <em>Nature Biotechnology</em>, 2020. <a href="https://doi.org/10.1038/s41587-020-0500-9" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li>Khakhar, A. et al. “Building Customizable Auto-Luminescent Luciferase-Based Reporters in Plants.” <em>eLife</em>, 2020. <a href="https://doi.org/10.7554/eLife.52786" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li>Wong, M. H. et al. “Nitroaromatic Detection and Infrared Communication from Wild-Type Plants Using Plant Nanobionics.” <em>Nature Materials</em>, 2016. <a href="https://doi.org/10.1038/nmat4771" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li>Hernández-Allica, J. et al. “Heavy Metal Whole-Cell Biosensors Using Eukaryotic Microorganisms: An Updated Critical Review.” <em>Frontiers in Microbiology</em>, 2015. <a href="https://doi.org/10.3389/fmicb.2015.00048" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li>Liu, Y. et al. “Biological and Molecular Components for Genetically Engineering Biosensors in Plants.” <em>BioDesign Research</em>, 2022. <a href="https://doi.org/10.34133/2022/9863496" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li>Toyota, M. et al. “Glutamate Triggers Long-Distance, Calcium-Based Plant Defense Signaling.” <em>Science</em>, 2018. <a href="https://doi.org/10.1126/science.aat7744" target="_blank" rel="noopener noreferrer">DOI</a></li>
+          <li>Leuzinger, K. et al. “Efficient Agroinfiltration of Plants for High-Level Transient Expression of Recombinant Proteins.” <em>Journal of Visualized Experiments</em>, 2013. <a href="https://doi.org/10.3791/50521" target="_blank" rel="noopener noreferrer">DOI</a></li>
+        </ol>
+        <p class="source-note">visual note: the mechanism diagram is my own HTML/CSS sketch. the two photos are real reference images; full credits and licenses are listed above and in <a href="IMAGE_CREDITS.md">IMAGE_CREDITS.md</a>.</p>
+      </section>
+    </main>
+
+    <footer class="proposal-footer">
+      <p>BioLume Sentinel · an idea by me, Pinteritte · 2026</p>
+      <div><a href="README.md">repo notes</a><a href="LICENSE.md">license</a><a href="#main">top ↑</a></div>
+    </footer>
+  </div>
+</body>
+</html>
