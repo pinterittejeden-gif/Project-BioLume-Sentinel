@@ -1,23 +1,23 @@
 # BioLume Sentinel
 
-could a plant glow when its roots encounter contaminated soil, so we know where to run proper tests?
+A field notebook for a contained reporter plant: one root-zone exposure, one optical signal, then a real chemical test.
 
-that's the question behind BioLume Sentinel. my idea is a contained, non-food reporter plant that works as a warning layer - not a replacement for analytical chemistry.
+The plant is a screening layer, not a pollution meter. The useful question is whether its signal can be specific, repeatable, and readable in messy soil without the organism becoming a new environmental problem.
 
 **read the full thing:** [pinterittejeden-gif.github.io/Project-BioLume-Sentinel](https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/)
 
-## where the idea stands
+## Current status
 
-- **what I found:** plant reporters, autoluminescent plants, phytosensors, and optical readouts already exist in published work.
-- **my leap:** connect a contaminant-responsive element, a tissue-aware signal gate, and standardized imaging in one removable module.
-- **the annoying problem:** normal plant stress and messy soil chemistry could easily imitate or hide the signal.
-- **what I'm not claiming:** I haven't built or validated this, and it would not detect every pollutant or replace lab testing.
+- **Starting point:** plant reporters, autoluminescent plants, phytosensors, and optical readouts exist in published work.
+- **Proposed connection:** combine a contaminant-responsive element, a tissue-aware gate, and fixed imaging in one removable module.
+- **Likely failure:** ordinary plant stress and mixed soil chemistry could imitate or hide the response.
+- **Evidence today:** literature review and system design only; no construct, calibration curve, or field result.
 
-## what's in here
+## Repository map
 
-- `index.html` has the full idea, failure conditions, test thresholds, roadmap, and papers.
+- `index.html` contains the signal chain, failure conditions, proposed thresholds, test sequence, and source register.
 - the mechanism diagram is drawn in HTML/CSS; `assets/` contains real reference images and [IMAGE_CREDITS.md](IMAGE_CREDITS.md) records where they came from.
 
-if you spot a broken assumption or a paper I missed, open an issue. that's genuinely useful.
+If you spot a broken assumption or a paper I missed, open an issue.
 
 the code is MIT licensed; my writing and diagrams are CC BY 4.0. details are in [LICENSE.md](LICENSE.md).
