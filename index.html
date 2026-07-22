@@ -4,58 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BioLume Sentinel - Living plant biosensors for soil contamination</title>
-  <meta name="description" content="My idea for a contained plant reporter that could point out where proper soil testing should happen next.">
-  <meta name="theme-color" content="#f3edda">
+  <meta name="description" content="A field notebook for a contained plant reporter that could flag soil for follow-up chemical testing.">
+  <meta name="theme-color" content="#07110d">
   <link rel="canonical" href="https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/">
   <meta property="og:title" content="BioLume Sentinel">
   <meta property="og:description" content="A contained plant reporter concept for directing confirmatory soil testing.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://pinterittejeden-gif.github.io/Project-BioLume-Sentinel/">
   <link rel="stylesheet" href="../pinterittejeden-gif/research.css?v=1.5">
+  <link rel="stylesheet" href="biolume.css?v=2">
 </head>
 <body class="theme-biolume">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="proposal-shell">
     <nav class="proposal-nav" aria-label="Proposal navigation">
-      <a href="https://pinterittejeden-gif.github.io/pinterittejeden-gif/">← back to my biology stuff</a>
-      <span class="status-pill">idea only · not tested</span>
+      <a href="https://pinterittejeden-gif.github.io/pinterittejeden-gif/">← project index</a>
+      <span class="status-pill">concept / unvalidated</span>
     </nav>
 
     <main id="main">
       <header class="proposal-hero">
         <div>
-          <p class="eyebrow">idea 01 · glowing plants</p>
+          <p class="eyebrow">field log / soil reporter / BL-01</p>
           <h1>BioLume Sentinel</h1>
-          <p class="proposal-dek">Could a contained plant reporter provide an inexpensive screening layer that identifies where confirmatory soil sampling should happen next?</p>
+          <p class="proposal-dek">A contained reporter plant that marks one root-zone exposure with light—useful as a prompt for sampling, never as the final measurement.</p>
           <div class="proposal-meta" role="group" aria-label="Project characteristics">
-            <span class="tag">Plant synthetic biology</span>
-            <span class="tag">Optical readout</span>
-            <span class="tag">Contained deployment</span>
+            <span class="tag">target / one analyte</span>
+            <span class="tag">output / optical</span>
+            <span class="tag">deployment / contained</span>
           </div>
         </div>
 
         <div class="system-diagram" role="img" aria-label="Concept flow from root-zone exposure through a gated reporter circuit to standardized optical readout and laboratory confirmation">
-          <div class="diagram-core">screening signal</div>
-          <span class="diagram-node node-top">root-zone exposure</span>
-          <span class="diagram-node node-right">gated reporter circuit</span>
-          <span class="diagram-node node-bottom">camera-readable output</span>
-          <span class="diagram-node node-left">chemical confirmation</span>
-          <span class="diagram-caption">my mechanism sketch · definitely not experimental data</span>
+          <div class="diagram-core">signal<br>candidate</div>
+          <span class="diagram-node node-top">01 / root exposure</span>
+          <span class="diagram-node node-right">02 / logic gate</span>
+          <span class="diagram-node node-bottom">03 / optical output</span>
+          <span class="diagram-node node-left">04 / lab check</span>
+          <span class="diagram-caption">signal path sketch / no measurements yet</span>
         </div>
       </header>
 
       <aside class="disclosure" aria-labelledby="disclosure-title">
-        <strong id="disclosure-title">what i'm claiming (and what i'm not)</strong>
-        <p>I haven't engineered, grown, field-tested, or validated BioLume Sentinel. The papers support individual reporter and sensing mechanisms; they do not prove that my combined system would be specific, stable, or safe to deploy.</p>
+        <strong id="disclosure-title">Instrument status: paper design</strong>
+        <p>No construct, plant line, calibration curve, or field trial exists. The literature supports separate sensing and reporter mechanisms—not this complete circuit. Any visible signal would still require a proper chemical measurement.</p>
       </aside>
 
       <section class="visual-notes" aria-labelledby="visual-notes-title">
         <div class="visual-notes-heading">
           <div>
-            <p class="section-kicker">real reference images</p>
-            <h2 id="visual-notes-title">the actual plant, up close</h2>
+            <p class="section-kicker">specimen view</p>
+            <h2 id="visual-notes-title">The chassis is ordinary. The readout is not.</h2>
           </div>
-          <p>Before my circuit sketch, these are the two real scales the idea has to connect: a whole Arabidopsis plant and the root surface where soil exposure would be sensed.</p>
+          <p>Arabidopsis is a small research plant, not a magic detector. The useful scale runs from the whole removable pot down to the root hairs that actually meet the soil.</p>
         </div>
 
         <div class="photo-notes">
@@ -82,30 +83,30 @@
       <section class="proposal-section" aria-labelledby="boundary-title">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">where the idea stands</p>
-            <h2 id="boundary-title">what I know, where I'm guessing, and what could break</h2>
+              <p class="section-kicker">signal audit</p>
+              <h2 id="boundary-title">Four columns I do not want to blur together</h2>
           </div>
           <p>The useful question is not whether plants can report signals - they can. The proof problem is whether one selected contaminant can generate a repeatable, specific output in realistic soil without confusing ordinary plant stress for pollution.</p>
         </div>
 
         <div class="boundary-grid">
           <article class="boundary-card">
-            <span>what I found</span>
+            <span>published starting point</span>
             <h3>Plants can carry measurable reporter systems</h3>
             <p>Transgenic phytosensors, fluorescent reporters, autoluminescent plants, and plant nanobionic sensors demonstrate several ways to turn exposure or signaling into an optical output [1–4,6].</p>
           </article>
           <article class="boundary-card">
-            <span>my leap</span>
+            <span>unproven connection</span>
             <h3>Route one root-zone signal into a field-readable warning</h3>
             <p>The proposal combines a contaminant-responsive regulatory element, a tissue-aware gate, and standardized imaging in a removable non-food plant module.</p>
           </article>
           <article class="boundary-card">
-            <span>what could kill it</span>
+            <span>likely failure</span>
             <h3>Specificity, bioavailability, and signal stability</h3>
             <p>Soil pH, moisture, organic matter, plant age, other stresses, transgene silencing, and mixed pollutants could all weaken or imitate the intended signal.</p>
           </article>
           <article class="boundary-card">
-            <span>what I'd test first</span>
+            <span>first useful readout</span>
             <h3>A blinded dose-response study with stress controls</h3>
             <p>One analyte and one chassis must outperform clean, drought, salt, nutrient, heat, pathogen, and mixed-soil controls before any contained field pilot is justified.</p>
           </article>
@@ -115,8 +116,8 @@
       <section class="proposal-section" aria-labelledby="architecture-title">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">how I imagine it working</p>
-            <h2 id="architecture-title">a useful warning light, not just a glowing plant</h2>
+              <p class="section-kicker">proposed signal chain</p>
+              <h2 id="architecture-title">Make every photon answer a specific question</h2>
           </div>
           <p>The first version deliberately narrows the problem: one pre-selected analyte class, one non-food model plant, and one calibrated output channel.</p>
         </div>
@@ -148,8 +149,8 @@
       <section class="proposal-section" aria-labelledby="metrics-title">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">numbers before excitement</p>
-            <h2 id="metrics-title">decide what counts before looking at results</h2>
+              <p class="section-kicker">acceptance window</p>
+              <h2 id="metrics-title">Write the pass/fail rules before the camera turns on</h2>
           </div>
           <p>These are proposed go/no-go thresholds for an early controlled study, not measured results. They should be revised with a domain expert before experimental use.</p>
         </div>
@@ -174,8 +175,8 @@
       <section class="proposal-section" aria-labelledby="controls-title">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">ways this could go badly</p>
-            <h2 id="controls-title">don't let the sensor become the problem</h2>
+              <p class="section-kicker">containment interlocks</p>
+              <h2 id="controls-title">The sensor cannot become a second contamination problem</h2>
           </div>
           <p>Containment, false-positive control, and independent confirmation are system requirements rather than optional later additions.</p>
         </div>
@@ -191,8 +192,8 @@
       <section class="proposal-section" aria-labelledby="roadmap-title">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">how I'd test it</p>
-            <h2 id="roadmap-title">six small steps before anything serious</h2>
+              <p class="section-kicker">calibration sequence</p>
+              <h2 id="roadmap-title">Bench first. Real soil much later.</h2>
           </div>
           <p>Progression stops whenever a specificity, stability, containment, or confirmation gate fails.</p>
         </div>
@@ -210,8 +211,8 @@
       <section class="proposal-section" aria-labelledby="references-title">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">stuff I read</p>
-            <h2 id="references-title">papers behind the idea</h2>
+              <p class="section-kicker">source register</p>
+              <h2 id="references-title">What the proposal is standing on</h2>
           </div>
           <p>These papers support separate mechanisms and measurement approaches. None of them proves that my full BioLume Sentinel idea works.</p>
         </div>
@@ -231,7 +232,7 @@
     </main>
 
     <footer class="proposal-footer">
-      <p>BioLume Sentinel · an idea by me, Pinteritte · 2026</p>
+      <p>BioLume Sentinel · field notebook BL-01 · Pinteritte · 2026</p>
       <div><a href="README.md">repo notes</a><a href="LICENSE.md">license</a><a href="#main">top ↑</a></div>
     </footer>
   </div>

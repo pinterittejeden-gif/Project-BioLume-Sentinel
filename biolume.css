@@ -1,0 +1,124 @@
+:root {
+  color-scheme: dark;
+  --ink: #d9ffe4;
+  --muted: #8bac96;
+  --paper: #07110d;
+  --surface: #0b1912;
+  --surface-soft: #0f2519;
+  --line: #284837;
+  --dark: #030805;
+  --accent: #72ff93;
+  --accent-soft: #12321f;
+  --accent-ink: #9cffb3;
+  --warning: #ffe59a;
+  --warning-soft: #2a220b;
+  --yellow: #d7ff3f;
+  --radius: 0;
+  --shadow: none;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+body.theme-biolume {
+  background:
+    linear-gradient(rgba(114,255,147,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(114,255,147,.035) 1px, transparent 1px),
+    radial-gradient(circle at 76% 12%, rgba(57,255,114,.09), transparent 28rem),
+    var(--paper);
+  background-size: 32px 32px, 32px 32px, auto, auto;
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.theme-biolume .proposal-shell { width: min(1220px, calc(100% - 2.5rem)); }
+.theme-biolume .proposal-nav { min-height: 72px; padding: 0; border-bottom: 1px solid var(--line); text-transform: uppercase; letter-spacing: .08em; }
+.theme-biolume .proposal-nav a { color: var(--accent); }
+.theme-biolume .status-pill,
+.theme-biolume .tag { border: 1px solid var(--line); border-radius: 999px; background: rgba(15,37,25,.9); color: var(--accent-ink); box-shadow: none; transform: none; text-transform: uppercase; }
+.theme-biolume .status-pill::before { width: .45rem; height: .45rem; margin-right: .5rem; border-radius: 50%; background: var(--yellow); box-shadow: 0 0 12px var(--yellow); content: ""; }
+.theme-biolume .proposal-hero { min-height: 700px; grid-template-columns: 1.08fr .92fr; gap: 5rem; padding: 7rem 0; border: 0; }
+.theme-biolume .eyebrow,
+.theme-biolume .section-kicker { padding: 0; color: var(--accent); background: transparent; transform: none; text-transform: uppercase; }
+.theme-biolume h1,
+.theme-biolume h2 { font-family: "Arial Narrow", Inter, sans-serif; font-weight: 760; letter-spacing: -.055em; }
+.theme-biolume h1 { max-width: 620px; font-size: clamp(4.5rem, 9vw, 8rem); line-height: .8; text-transform: uppercase; text-shadow: 0 0 40px rgba(114,255,147,.14); }
+.theme-biolume .proposal-dek { max-width: 630px; color: #b6c9ba; font-size: 1.12rem; }
+.theme-biolume .system-diagram { min-height: 480px; padding: 2rem; border: 1px solid var(--line); border-radius: 0; background: repeating-linear-gradient(0deg, transparent 0 5px, rgba(114,255,147,.025) 5px 6px), radial-gradient(circle, rgba(114,255,147,.13) 0 1px, transparent 2px); background-size: auto, 18px 18px; box-shadow: inset 0 0 50px rgba(0,0,0,.65), 0 0 0 12px #050d09; transform: none; }
+.theme-biolume .system-diagram::before { width: 68%; height: 68%; border: 1px solid rgba(114,255,147,.34); }
+.theme-biolume .system-diagram::after { width: 42%; height: 42%; border: 1px dashed rgba(114,255,147,.25); }
+.theme-biolume .diagram-core { width: 9.5rem; border: 1px solid var(--accent); border-radius: 50%; color: #d9ffe4; background: #0a1d12; box-shadow: 0 0 26px rgba(114,255,147,.18); font: 700 1rem/1.25 ui-monospace, monospace; text-transform: uppercase; }
+.theme-biolume .diagram-node { border: 1px solid var(--line); border-radius: 0; color: var(--accent-ink); background: rgba(5,13,9,.96); text-align: left; }
+.theme-biolume .diagram-caption { color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.theme-biolume .disclosure { grid-template-columns: .7fr 1.3fr; padding: 1.4rem; border: 1px solid #766321; border-radius: 0; color: var(--warning); background: repeating-linear-gradient(135deg, rgba(255,229,154,.025) 0 8px, transparent 8px 16px), var(--warning-soft); box-shadow: none; transform: none; }
+.theme-biolume .disclosure strong { color: var(--warning); font: 700 .8rem ui-monospace, monospace; text-transform: uppercase; letter-spacing: .08em; }
+.theme-biolume .disclosure p { color: #d5cda8; }
+.theme-biolume .visual-notes,
+.theme-biolume .proposal-section { padding: 7rem 0; border-bottom: 1px solid var(--line); }
+.theme-biolume .visual-notes-heading,
+.theme-biolume .section-heading { grid-template-columns: 1.2fr .8fr; gap: 4rem; }
+.theme-biolume .visual-notes-heading h2,
+.theme-biolume .section-heading h2 { font-size: clamp(2.6rem, 5.5vw, 5.6rem); line-height: .9; text-transform: uppercase; }
+.theme-biolume .visual-notes-heading > p:last-child,
+.theme-biolume .section-heading > p { color: var(--muted); }
+.theme-biolume .photo-notes { gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.theme-biolume .photo-note { padding: 0; border: 0; border-radius: 0; background: var(--surface); box-shadow: none; transform: none; }
+.theme-biolume .photo-note::before { display: none; }
+.theme-biolume .photo-note img { height: 26rem; border: 0; filter: saturate(.62) contrast(1.18) hue-rotate(45deg); }
+.theme-biolume .photo-note figcaption { padding: 1.3rem; border-top: 1px solid var(--line); }
+.theme-biolume .photo-note figcaption strong { color: var(--ink); font-family: ui-monospace, monospace; font-size: .82rem; text-transform: uppercase; }
+.theme-biolume .boundary-grid,
+.theme-biolume .mechanism-grid,
+.theme-biolume .control-grid { grid-template-columns: repeat(4, 1fr); gap: 1px; border: 1px solid var(--line); background: var(--line); }
+.theme-biolume .boundary-card,
+.theme-biolume .mechanism-card,
+.theme-biolume .control-card { min-height: 270px; padding: 1.25rem; border: 0; border-radius: 0; background: var(--surface); box-shadow: none; transform: none; }
+.theme-biolume .mechanism-card { min-height: 310px; }
+.theme-biolume .boundary-card span,
+.theme-biolume .mechanism-card span,
+.theme-biolume .control-card span { color: var(--accent); text-transform: uppercase; }
+.theme-biolume .boundary-card h3,
+.theme-biolume .mechanism-card h3,
+.theme-biolume .control-card h3 { margin-top: 3rem; color: var(--ink); font-family: Inter, sans-serif; font-size: 1.12rem; font-weight: 700; }
+.theme-biolume .boundary-card p,
+.theme-biolume .mechanism-card p,
+.theme-biolume .control-card p { color: var(--muted); }
+.theme-biolume .mechanism-card::after { right: 1rem; bottom: 1rem; width: 2.5rem; height: 2.5rem; border-color: var(--line); border-radius: 0; }
+.theme-biolume .metrics-wrap { border: 1px solid var(--line); border-radius: 0; background: var(--surface); box-shadow: none; }
+.theme-biolume .metrics th { color: var(--accent); background: #0c1f15; text-transform: uppercase; }
+.theme-biolume .metrics th,
+.theme-biolume .metrics td { border-bottom: 1px solid var(--line); }
+.theme-biolume .metrics td { color: #aec0b2; }
+.theme-biolume .roadmap { grid-template-columns: repeat(6, 1fr); border-top: 1px solid var(--accent); }
+.theme-biolume .roadmap li { min-height: 280px; padding: 1rem; border-right: 1px solid var(--line); }
+.theme-biolume .roadmap li:nth-child(3n) { border-right: 1px solid var(--line); }
+.theme-biolume .roadmap li:last-child { border-right: 0; }
+.theme-biolume .roadmap li::before { color: var(--accent); }
+.theme-biolume .roadmap h3 { margin-top: 4rem; color: var(--ink); font-family: Inter, sans-serif; font-size: 1rem; font-weight: 700; }
+.theme-biolume .roadmap p,
+.theme-biolume .references { color: var(--muted); }
+.theme-biolume .source-note { border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 0; color: var(--accent-ink); background: var(--surface); transform: none; }
+.theme-biolume .proposal-footer { border-top: 1px solid var(--line); color: var(--muted); text-transform: uppercase; }
+
+@media (max-width: 980px) {
+  .theme-biolume .boundary-grid,
+  .theme-biolume .mechanism-grid,
+  .theme-biolume .control-grid { grid-template-columns: repeat(2, 1fr); }
+  .theme-biolume .roadmap { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 780px) {
+  .theme-biolume .proposal-hero,
+  .theme-biolume .visual-notes-heading,
+  .theme-biolume .section-heading { grid-template-columns: 1fr; }
+  .theme-biolume .proposal-hero { min-height: auto; gap: 4rem; }
+  .theme-biolume .system-diagram { min-height: 400px; }
+  .theme-biolume .roadmap { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 540px) {
+  .theme-biolume .proposal-shell { width: min(100% - 1.2rem, 1220px); }
+  .theme-biolume .boundary-grid,
+  .theme-biolume .mechanism-grid,
+  .theme-biolume .control-grid,
+  .theme-biolume .roadmap { grid-template-columns: 1fr; }
+  .theme-biolume .photo-note img { height: 19rem; }
+}
