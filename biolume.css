@@ -96,6 +96,9 @@ body.theme-biolume {
 .theme-biolume .roadmap p,
 .theme-biolume .references { color: var(--muted); }
 .theme-biolume .source-note { border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 0; color: var(--accent-ink); background: var(--surface); transform: none; }
+.theme-biolume .inline-citation { color: var(--accent-ink); font-family: ui-monospace, monospace; font-size: .82em; font-style: normal; font-weight: 800; white-space: nowrap; }
+.theme-biolume .references li { scroll-margin-top: 2rem; }
+.theme-biolume .references li:target { outline: 2px solid var(--accent); outline-offset: .35rem; background: var(--surface-soft); }
 .theme-biolume .proposal-footer { border-top: 1px solid var(--line); color: var(--muted); text-transform: uppercase; }
 
 @media (max-width: 980px) {
